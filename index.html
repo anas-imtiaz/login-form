@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Compiled and minified JavaScript -->
+    <title>The Login Form</title>
+    <style>
+      *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+body{
+    font-family: sans-serif;;
+    font-size: 10px;
+    line-height: 1.6;
+    height: 100%;
+}
+.wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fafafa;
+}
+.login-form{
+    width: 350px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    padding: 2rem;
+    background: #ffffff;
+}
+.form-input{
+    background: #fafafa;
+    border: 1px solid #eeeeee;
+    padding: 5px;
+    width: 65%;
+}
+.form-group{
+    margin-bottom: 1rem;
+}
+.form-button{
+    background: #3676B8;
+    color: #ffffff;
+    padding: 8px;
+    width: 18%;
+    border: none;
+    border-radius: 5px;
+    font-size: 10px;
+    position: relative;
+    left: 40%;
+    right: 40%;
+}
+.form-button:hover{
+    background: #69c8e7;
+}
+.form-header{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.form-footer{
+    text-align: center;
+}
+.main {
+    font-size: 25px;
+            
+        }
+        .center {
+            position: relative;
+            left: 19%;
+            right: 19%;
+        }
+        p {
+            margin-bottom: 5px;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        a:hover {
+           text-decoration: underline ;
+            color:black;
+        }
+        .active {
+            color: #3575D3;
+        }
+        
+        input[type='radio'] {
+            position: relative;
+            top: 2px;
+        }
+        
+        .top {
+            margin-bottom: 1.3rem;
+        }
+        .last {
+           color: #3676B8;
+            padding: 10px;
+            position: relative;
+            left: 5px;
+            right: 5px;
+            
+            
+        }
+        .last:hover {
+             text-decoration: underline ;
+            color:#3676B8;
+        }
+        .hire {
+              padding: 10px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+<div class="wrap">
+        <form class="login-form" action="">
+            <div class="form-header">
+                 <div class="top"><a class="active hire" href="#"><input type="radio" name="genre" value="rock" checked="checked" /> Hosting Login</a><a href="#">  <input class="hire" type="radio" name="genre" value="pop" /> Webmail Login </a></div>
+                 <div class="main">Log in to your account</div>
+            </div>
+            <!--Email Input-->
+            <div class="center">
+            <div class="form-group">
+               <p>Email or Domain Name</p>
+                <input type="text" class="form-input" >
+            </div>
+            <!--Password Input-->
+            <div class="form-group">
+               <p>password</p>
+                <input type="password" class="form-input" >
+            </div>
+            </div>
+            <!--Login Button-->
+            <div class="form-group">
+                <button class="form-button" type="submit">Login</button>
+            </div>
+         
+            <div class="form-footer">
+            <a class="last" href="#">Forgot Password</a><a class="last" href="#">Create Account</a>
+            </div>
+            
+        </form>
+    </div><!--/.wrap-->
+</body>
+</html> 
